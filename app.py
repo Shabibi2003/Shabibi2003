@@ -44,7 +44,7 @@ for day in range(1, num_days + 1):
 fig, ax = plt.subplots(figsize=(10, 6))
 
 # Plot the calendar with the feature values
-sns.heatmap(calendar_data, cmap='coolwarm', annot=True, fmt=".1f", 
+sns.heatmap(calendar_data, cmap='paired', annot=True, fmt=".1f", 
             cbar_kws={'label': f'Average {selected_feature}'}, ax=ax, 
             xticklabels=[ 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun'],
             yticklabels=['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5'],
